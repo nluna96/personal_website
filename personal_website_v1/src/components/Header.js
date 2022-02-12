@@ -2,6 +2,7 @@ import React, {useState}  from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import { Modal } from './Modal';
+import Resume from '../download/Luna_Noel.pdf';
 
 const Navbar = styled.nav`
     height: 60px;
@@ -23,6 +24,12 @@ const Logo = styled(Link)`
 
 const NavbarItems = styled.div`
 
+    a{
+        color: #fff;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 2rem;
+    }
     button{
     background-color: transparent;
     color: #fff;
@@ -41,12 +48,6 @@ const NavbarItems = styled.div`
     }`
     ;
 
-const NavbarLink = styled(Link)`
-    color: #fff;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 2rem;
-    `;
 
 function Header() {
 
@@ -61,7 +62,7 @@ function Header() {
             <Navbar>
                 <Logo to="/">NL</Logo>
                 <NavbarItems>
-                    <NavbarLink to="/">Resume</NavbarLink>
+                    <a href={Resume} download="Luna_Noel">Resume</a>
                     <button onClick={openModal}>Contact</button>
                 </NavbarItems>
             </Navbar>

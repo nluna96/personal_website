@@ -174,21 +174,3 @@ export const Modal = ({showModal, setShowModal}) => {
 }
 
 export default Modal;
-
-
-                                // <label>Name</label>
-                                // <br/>
-                                // <input type="text" name="name" value={values.name} onChange={handleChange} /> 
-                                // {errors.name && <p>{errors.name}</p>}
-                                // <br/>
-                                // <label>Email</label>
-                                // <br/>
-                                // <input type="email" name="user_email" value={values.user_email} onChange={handleChange} />
-                                // {errors.user_email && <p>{errors.user_email}</p>}
-                                // <br/>
-                                // <label>Message</label>
-                                // <br/>
-                                // <textarea type="text" name="message" value={values.message} onChange={handleChange} />
-                                // {errors.message && <p>{errors.message}</p>}
-                                // <br/>
-                                // <button type="submit">Send</button>
