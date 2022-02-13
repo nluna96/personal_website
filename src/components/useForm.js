@@ -22,7 +22,7 @@ const useForm = (validate) => {
     const handleSubmit = e => {
 
 
-        if (Object.keys(validate(values)).length == 0){
+        if (Object.keys(validate(values)).length === 0){
 
             console.log(values)
             emailjs.send('service_f6m8b5b', 'template_cbi1mm7', values, 'user_EVRTefLUNOWTEEy4t8sBW').then(res=>{

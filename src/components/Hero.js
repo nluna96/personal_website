@@ -36,8 +36,8 @@ export const Hero = ({ image }) => {
         <>
             <Section image={image}>
                 <FooterBottom>
-                    <a href="https://www.linkedin.com/in/noelamadorluna/"><img src={require("../logos/linkedin.png")} /></a>
-                    <a href="https://github.com/nluna96"><img src={require("../logos/github.png")} /></a>
+                    <a href="https://www.linkedin.com/in/noelamadorluna/"><img src={require("../logos/linkedin.png")} alt="linked in logo"/></a>
+                    <a href="https://github.com/nluna96"><img src={require("../logos/github.png")} alt="github in logo"/></a>
                 </FooterBottom>
             </Section>
         </>
