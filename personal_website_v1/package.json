@@ -1,6 +1,6 @@
 {
   "name": "personal_website_v1",
-  "homepage": "https://www.noelluna.com",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
