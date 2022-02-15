@@ -45,6 +45,46 @@ const ModalContent = styled.div`
   text-align: left;
   line-height: 1.8;
   color: #141414;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+
+    input {
+    width: 100%;
+    padding: 10px 180px 10px;
+    ${'' /* padding-top: 10px;
+    padding-right: 150px;
+    padding-bottom: 10px; */}
+    ${'' /* padding: 10px 150px; */}
+    ${'' /* padding-left: 10px; */}
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    }
+    
+    textarea {
+    padding: 10px 180px 50px;
+    ${'' /* padding-top: 10px;
+    padding-right: 150px;
+    padding-bottom: 10px; */}
+    ${'' /* padding-left: 10px; */}
+    width: 100%;
+    padding-left: 10px;
+    resize: none;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    }
+
+  }
+
   button {
     font-size: 1.2rem;
     padding: 10px 20px;
@@ -63,26 +103,16 @@ const ModalContent = styled.div`
     }
   }
 
-  input {
-    padding: 10px 150px 10px 10px;
-    text-align: left;
-    margin: 5px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-  }
-
   p{
     color: red;
     font-size: 14px;
   }
 
-  textarea {
-    padding: 10px 140px 50px 10px;
-    resize: none;
-    margin: 5px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+  h1 {
+    font-size: 45px;
   }
+
+
 `;
 
 const CloseModalButton = styled(MdClose)`
@@ -141,8 +171,8 @@ export const Modal = ({showModal, setShowModal}) => {
                       <ModalWrapper showModal={showModal}>
                           <ModalImg src={require('../images/img-modal1.JPG')} alt='person' />
                           <ModalContent>
-                              <h1>Contact Me</h1>
                               <form onSubmit={handleSubmit}>
+                                <h1>Contact Me</h1>
                                 <div>
                                   <label>Name</label>
                                   <br/>
