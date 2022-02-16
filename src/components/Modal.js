@@ -57,11 +57,6 @@ const ModalContent = styled.div`
     input {
     width: 100%;
     padding: 10px 180px 10px;
-    ${'' /* padding-top: 10px;
-    padding-right: 150px;
-    padding-bottom: 10px; */}
-    ${'' /* padding: 10px 150px; */}
-    ${'' /* padding-left: 10px; */}
     box-sizing: border-box;
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -70,10 +65,6 @@ const ModalContent = styled.div`
     
     textarea {
     padding: 10px 180px 50px;
-    ${'' /* padding-top: 10px;
-    padding-right: 150px;
-    padding-bottom: 10px; */}
-    ${'' /* padding-left: 10px; */}
     width: 100%;
     padding-left: 10px;
     resize: none;

@@ -16,7 +16,7 @@ const FooterBottom = style.footer`
     background: transparent;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-content: right;
     text-align: right;
     padding: 0rem calc((100vw - 1300px) / 2);
